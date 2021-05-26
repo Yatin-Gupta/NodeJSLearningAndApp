@@ -1,0 +1,20 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+button,
+input[type="submit"] {
+  border: 1px solid brown;
+  border-radius: 4px;
+  padding: 5px;
+  color: #fff;
+  background-color: brown;
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.products {
+  display: flex;
+  width: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.products__item {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid brown;
+  border-radius: 16px;
+  box-shadow: 0px 2px 9px rosybrown;
+}
+
+.products__item img {
+  border-radius: 16px;
+}
+
+.products__item .title {
+  color: brown;
+}

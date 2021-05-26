@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+</head>
+<body>
+    <% if (showErrorPrefix === true) { %>
+        <p><b>Error: </b>404 Page</p>
+    <% } else { %>
+        <p>404 Page</p>
+    <% } %>
+    <% if (items && items.length > 0) { %>
+        <ul>
+            <% for(const item of items) { %>
+                <li class="<%= item.active && 'active' %>"><%= item.title %></li>
+            <% } %>
+        </ul>
+    <% } %>
+    <%- include('partials/footer.ejs') %>

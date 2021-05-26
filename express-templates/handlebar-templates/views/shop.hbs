@@ -1,0 +1,13 @@
+<main>
+    {{!-- In handlers, you cannot perform operations such as hasUsers > 0. It should either be true or false --}}
+    {{!-- Handlers focus on keeping all business logic on app side not in templates --}}
+    {{#if hasUsers}}
+        <ul>
+            {{#each users}}
+                <li>{{ this.name }}</li>
+            {{/each}}
+        </ul>
+    {{ else }}
+        <h4>No User found</h4>
+    {{/if}}
+</main>

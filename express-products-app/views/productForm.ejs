@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <%- include('partials/navigation.ejs') %>
+            <div class="products-form">
+                <form method="POST" action="/admin/add-product">
+                    <div class="form-control">
+                        <label for="product-title">Title</label>
+                        <input type="text" id="product-title" name="title">
+                    </div>
+                    <div class="form-control">
+                        <label for="product-price">Price</label>
+                        <input type="number" id="product-price" name="price">
+                    </div>
+                    <div class="form-control">
+                        <input type="submit" id="submit-btn" name="submit" value="Add Product">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </main>
+<%- include('partials/footer.ejs') %>

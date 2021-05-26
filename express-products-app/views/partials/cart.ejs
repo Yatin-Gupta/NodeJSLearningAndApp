@@ -1,0 +1,10 @@
+<div class="cart">
+    <span class="cart__icon">
+        <i class="fas fa-shopping-cart"></i>
+    </span>
+    <% if (cart && cart.quantity) { %>
+        <span class="cart__count"><%= cart.quantity %></span>
+    <% } else { %>
+        <span class="cart__count">0</span>
+    <% } %>
+</div>

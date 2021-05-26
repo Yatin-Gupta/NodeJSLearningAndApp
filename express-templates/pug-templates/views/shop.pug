@@ -1,0 +1,11 @@
+extends layout/main
+block styles
+    link(rel="stylesheet", href="/css/shop.css")
+block content
+    .items-list 
+            if users && users.length > 0
+                ul
+                    each user in users 
+                        li #{user.name} 
+            else 
+                h4 No User
